@@ -1,18 +1,4 @@
-# from django.contrib import admin
-# from .models import User, Incident
-
-# @admin.register(User)
-# class UserAdmin(admin.ModelAdmin):
-#     list_display = ('username', 'email', 'phone_number', 'city', 'country')
-#     search_fields = ('username', 'email', 'phone_number')
-#     list_filter = ('city', 'country')
-
-# @admin.register(Incident)
-# class IncidentAdmin(admin.ModelAdmin):
-#     list_display = ('incident_id', 'reporter', 'incident_type', 'priority', 'status', 'reported_date')
-#     search_fields = ('incident_id', 'details')
-#     list_filter = ('incident_type', 'priority', 'status', 'reported_date')
-#     readonly_fields = ('incident_id', 'reporter', 'reported_date')
+ 
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import User, Incident

@@ -8,13 +8,12 @@ import {
 import { Add, Edit, Search } from '@mui/icons-material';
 // import AuthContext from '../../context/AuthContext';
 import AuthContext from '../../../context/AuthContext';
-// import axios from '../../services/auth';
-import axios from 'axios';
+ import axios from 'axios';
 
 function IncidentList() {
   const [incidents, setIncidents] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [filterPriority, setFilterPriority] = useState('');
+  const [filterPriority, setFilterPriority] = useState('');       
   const [filterStatus, setFilterStatus] = useState('');
   const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
